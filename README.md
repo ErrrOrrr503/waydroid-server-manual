@@ -5,6 +5,7 @@ How to access a server, hosted on waydroid from host linux.
 If you try to host some server in waydroid (for example, everyproxy, other proxies, samba, etc) you will be unable to access it from your host machine due to firewall settings.
 
 # Manual
+0. The file to edit is `/usr/lib/waydroid/data/scripts/waydroid-net.sh`. (Your installation path may be different).
 1. Disable NFT to use iptables.
    ```bash
    # disablig nft to use iptables
