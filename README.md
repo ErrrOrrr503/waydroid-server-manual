@@ -2,7 +2,7 @@
 How to access a server, hosted on waydroid from host linux.
 
 # Motivation
-If you try to host some server in waydroid (for example, everyproxy, other proxies, samba, etc) you will be unable to access it from your host machine due to firewall settins.
+If you try to host some server in waydroid (for example, everyproxy, other proxies, samba, etc) you will be unable to access it from your host machine due to firewall settings.
 
 # Manual
 1. Disable NFT to use iptables.
