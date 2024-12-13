@@ -30,7 +30,7 @@ If you try to host some server in waydroid (for example, everyproxy, other proxi
     $IPTABLES_BIN $use_iptables_lock -I OUTPUT -o ${LXC_BRIDGE} -p tcp --sport <desired_port> -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
    ```
-3. If something is interfering with routing on your waydroid, i.e. some vpn, you have to tell waydroid to route packets to host ip addr directly:
+3. If something is interfering with routing on your waydroid, i.e. certain network configurations that modify traffic routing, you have to tell waydroid to route packets to host ip addr directly:
 
    3.1. Use waydroid image with root access to use `ip rule add`.
 
