@@ -8,12 +8,12 @@ If you try to host some server in waydroid (for example, everyproxy, other proxi
 0. The file to edit is `/usr/lib/waydroid/data/scripts/waydroid-net.sh`. (Your installation path may be different).
 1. Disable NFT to use iptables.
    ```bash
-   # disablig nft to use iptables
+   # disabling nft to use iptables
    # NFT="$(command -v nft)"
    NFT=""
    ```
    Note: it also fixes internet connection in waydroid if you have no internet in waydroid. See https://github.com/waydroid/waydroid/issues/143#issuecomment-1520857943
-2. Allow inoming connections from host to the desired port and replies from this port to the host.
+2. Allow incoming connections from host to the desired port and replies from this port to the host.
    ```bash
    start_iptables() {
     start_ipv6
